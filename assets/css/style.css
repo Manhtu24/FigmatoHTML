@@ -460,3 +460,191 @@ a {
   height: 50px;
   background-color: var(--primary-color);
 }
+/* Features2 */
+.features2 .body {
+  flex-direction: row-reverse;
+}
+.features2 {
+  margin-top: 70px;
+}
+.features2 .content {
+  width: 49%;
+}
+.features2 .img img {
+  width: 470px;
+  height: 440px;
+  top: 3163px;
+  left: 835px;
+  gap: 0px;
+  border-radius: 20px 0px 0px 0px;
+  opacity: 0px;
+}
+
+/* Blogs */
+.blogs {
+  margin-top: 135px;
+  padding: 96px 0px;
+  background-color: #fffcf4;
+}
+.blogs .block-top {
+  text-align: center;
+}
+.blogs .block-top .desc {
+  color: #696262;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  width: 448px;
+  margin: 16px auto 0px;
+}
+.blogs .block-list {
+  display: flex;
+  margin-top: 55px;
+  gap: 30px;
+  overflow: hidden;
+}
+.blogs .item {
+  flex-shrink: 0;
+  width: calc(33.33% - 20px);
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+.blogs .item:hover {
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+  border: 2px solid rgb(43, 43, 223);
+}
+.blogs .item .thumb {
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+  height: 250px;
+  object-fit: cover;
+}
+.blogs .item .info {
+  padding: 20px 20px 28px;
+}
+.blogs .item .date {
+  padding-bottom: 12px;
+  position: relative;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  display: inline-flex;
+  align-items: center;
+  /*Ví là nếu dùng :: Before thì nó sẽ gần giôgns như là một thẻ con của .date */
+}
+.blogs .item .date::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  margin-right: 4px;
+}
+.blogs .item .date::after {
+  content: "";
+  display: inline-block;
+  /* width: 160px; */
+  right: -27px;
+  height: 1px;
+  gap: 0px;
+  border-radius: 0.5px 0px 0px 0px;
+  background-color: #e2dfda;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.blogs .item .title {
+  color: #171100;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+  margin-top: 12px;
+}
+.blogs .item .btn {
+  margin-top: 12px;
+  font-size: 1.4rem;
+}
+.blogs .item .btn:hover {
+  background-color: var(--primary-color);
+}
+.blogs .dots {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 38px;
+}
+.blogs .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #5f5b53;
+  cursor: pointer;
+}
+.blogs .dot.active {
+  background-color: var(--primary-color);
+  cursor: default;
+}
+/* FOOTER */
+footer {
+  background-color: #2e2100;
+  padding: 96px 135px 0;
+}
+.footer .row {
+  display: flex;
+  padding-bottom: 38px;
+  border-bottom: 1px solid #59554b;
+}
+.footer .row .column {
+  width: 21.6%;
+}
+.footer .row .column:first-child {
+  width: 35%;
+}
+.footer .desc {
+  margin-top: 18px;
+  max-width: 267px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+.footer .socials {
+  display: flex;
+  gap: 18px;
+  margin-top: 18px;
+}
+.footer .title {
+  padding-right: 48px;
+  padding-bottom: 14px;
+  display: inline-block;
+  border-bottom: 1px solid #59554b;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+.footer .list {
+  margin-top: 28px;
+}
+.footer .list a {
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #bfbcb2;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.footer .list li:last-child a {
+  margin-bottom: 0px;
+}
+.footer .list strong {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86;
+}
+.footer .copyright {
+  padding: 28px 0px;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #807d74;
+  text-align: center;
+}
